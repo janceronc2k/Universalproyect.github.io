@@ -1,0 +1,251 @@
+<html>
+<head>
+<meta>
+<title>Contenido frame medio ambiente</title>
+<link rel="icon" type="image/jpg" href="imagenes/textura.jpg"/>
+
+<script>
+
+/*
+Uphill Text effect
+By JavaScript Kit (http://javascriptkit.com)
+Over 400+ free scripts here!
+*/
+
+function uphilltext(text){
+var temptext=text.toUpperCase()
+var size=1
+//go through the text, letter by letter
+for (i=0;i<temptext.length;i++){
+document.write(temptext.charAt(i).fontsize(size).bold())
+if (size<7)
+size++
+else
+size=1
+}
+}
+</script>
+<style type="text/css">
+.oculto { display: none; }
+.visible { display: inline; }
+</style>
+
+<script type="text/javascript">
+function muestra() {
+  var elemento = document.getElementById("adicional");
+  elemento.className = "visible";
+
+  var enlace = document.getElementById("enlace");
+  enlace.className = "oculto";
+}
+</script>
+</head>
+<style>
+
+p {color:white;}
+li {color:white;}
+h2 {color:blue;}
+</style>
+<body background=specter.jpg onload="doWave(0)" s>
+	<center><FONT SIZE="7" FACE="Verdana"><SPAN ID="s"  STYLE=" position:absolute; color:white">MARTE</SPAN></center>
+	<center><SPAN ID="s2" STYLE=" position:absolute; color:white">MARTE</SPAN></center>
+	<center><SPAN ID="s3" STYLE=" position:absolute; color:white">MARTE</SPAN></center>
+	<center><SPAN ID="ds" STYLE=" position:relative; "></SPAN></center>
+	</FONT>
+	
+	<FONT COLOR="#000000" SIZE="6" FACE="Verdana">MARTE</FONT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+y=0
+x=2
+z=1
+function l(){
+y+=1
+x+=1
+z+=1
+document.all.s.style.color="orange";
+document.all.s.style.margin=y;
+document.all.s3.style.color="white";
+document.all.s3.style.margin=z;
+document.all.s2.style.color="red";
+document.all.s2.style.margin=x;
+
+if (y>3){
+y=0}
+if (z>3){
+z=0}
+if (x>3){
+x=0}
+setTimeout("l(),1")
+}
+
+l()
+
+</SCRIPT>
+
+<p align="center"><b>
+<script>
+var isIE=document.all?true:false;
+var isNS4=document.layers?true:false;
+var isNS6=!isIE&&document.getElementById?true:false;
+function openIt() {
+  var _page = "http://www.js-examples.com/";
+  var _name = "Messages";
+  var _parms = "status=yes,top=100,left=200,width=250,height=1";
+  window.open(_page,_name,_parms)
+}
+</script>
+
+</head>
+</b>
+<body>
+
+</p>
+
+<div id="StartMenu">
+<font color="white" size="3">
+	
+  <br><strong>Marte es un planeta desértico y frío. Es la mitad del tamaño de la Tierra, y también recibe el nombre de "planeta rojo". 
+  </strong>Es rojo por el hierro oxidado que tiene en el suelo. Como la Tierra, Marte tiene estaciones, casquetes polares,
+   volcanes, cañones y clima. Tiene una atmósfera poco densa hecha de dióxido de carbono, nitrógeno y argón.
+   <il><a href="pmarte2.html" target=planet>Mas informacion de marte</a>
+</font>
+</div>
+
+<script name="startmenu"> 
+onclick="openIt()"; // this statement should go inside the body tag to work best!
+var h = "hidden"; 
+var v = "visible"; 
+
+function showMenu(_v)
+{
+  if(isIE)
+    window.document.all.StartMenu.style.visibility = _v?v:h;
+  if(isNS6)
+    document.getElementById("StartMenu").style.visibility=_v?v:h;
+  if(isNS4)
+  {
+    alert("This script will not run for NS4 because this DIV is positioned relatively and not absolutely!");
+	/*
+	 * This code would run if the DIV was positioned absolutely.
+     * document.StartMenu.hidden=_v?"true":"false";
+	 */
+  }
+}
+</script> 
+<a href="javascript:showMenu(true)"><font size="2">Mostrar texto</font></a><font size="2"><BR>
+<a href="javascript:showMenu(false)">Esconder texto</a> </font>
+<p>
+	Hay signos de antiguas inundaciones en Marte, pero ahora el agua existe principalmente en su polvo helado y sus nubes
+	delgadas. En algunas laderas marcianas, se han encontrado pruebas de agua líquida salada.
+	<p>
+		<p>
+	Los científicos quieren saber si Marte podría haber tenido seres vivos en el pasado. También quieren saber si Marte podría
+	albergar vida ahora o en el futuro.
+	<p>
+		<CENTER><FONT COLOR="YELLOW">
+<script>
+uphilltext("Hay vida en marte?")
+</script>
+</center>
+</b></p>
+</FONT>
+<p id="texto">Los recientes descubrimientos de los róvers de la NASA se ven como si se trataran de rastros alienígenas. Sin embargo, los científicos aún no han explicado completamente cómo funciona este planeta. <span id="adicional" class="oculto"> por el momento los científicos no están listos para concluir que Marte fue habitado alguna vez. Cada indicio atractivo de biología podría ser explicado también por algún aspecto desconocido de la geología o de la química de ese planeta. Es demasiado lo que aún no se sabe sobre el funcionamiento del planeta y sobre cómo fenómenos inanimados podrían actuar como falsos indicios de vida. </span></p>
+<a id="enlace" href="#" onclick="muestra(); return false;">Seguir leyendo</a>
+<BR>
+		
+	<marquee scrollamount="10" direction="right">
+		<img src="ovni.jpg"style=width:300px;height:200px;/>
+		
+
+	</marquee>
+
+	
+<center><h2><script language="JavaScript1.2">
+
+//Neon Lights Text II by G.P.F. (gpf@beta-cc.de)
+//visit http://www.beta-cc.de
+//Visit http://www.dynamicdrive.com for this script 
+
+var message="Exploracion en marte"
+var neonbasecolor="white"
+var neontextcolor="yellow"
+var neontextcolor2="orange"
+var flashspeed=100						// speed of flashing in milliseconds
+var flashingletters=3						// number of letters flashing in neontextcolor
+var flashingletters2=1						// number of letters flashing in neontextcolor2 (0 to disable)
+var flashpause=0						// the pause between flash-cycles in milliseconds
+
+///No need to edit below this line/////
+
+var n=0
+if (document.all||document.getElementById){
+document.write('<font color="'+neonbasecolor+'">')
+for (m=0;m<message.length;m++)
+document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+document.write('</font>')
+}
+else
+document.write(message)
+
+function crossref(number){
+var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+return crossobj
+}
+
+function neon(){
+
+//Change all letters to base color
+if (n==0){
+for (m=0;m<message.length;m++)
+crossref(m).style.color=neonbasecolor
+}
+
+//cycle through and change individual letters to neon color
+crossref(n).style.color=neontextcolor
+
+if (n>flashingletters-1) crossref(n-flashingletters).style.color=neontextcolor2 
+if (n>(flashingletters+flashingletters2)-1) crossref(n-flashingletters-flashingletters2).style.color=neonbasecolor
+
+
+if (n<message.length-1)
+n++
+else{
+n=0
+clearInterval(flashing)
+setTimeout("beginneon()",flashpause)
+return
+}
+}
+
+function beginneon(){
+if (document.all||document.getElementById)
+flashing=setInterval("neon()",flashspeed)
+}
+beginneon()
+
+
+</script></h2></center>
+	
+	<p>
+	A pesar de que Marte es el vecino planetario más próximo a la Tierra, es un lugar difícil de visitar. Ha habido casi cuarenta intentos de enviar misiones a Marte, de los que más de la mitad fracasaron.
+	Las naves que han funcionado correctamente han revelado un mundo de maravillas seductoramente similar, y exóticamente diferente, de la Tierra. La primera misión con éxito a Marte, Mariner 4, fue lanzada por la NASA el 28 de noviembre de 1964. Pasó a 6.120 millas de Marte y envió 22 fotos, tal como se había planeado.
+
+
+	</p>	
+	
+<p>
+La exploración de Marte se interrumpió durante más de dos décadas, en las que sólo se produjeron intentos fallidos o logros parciales (la sonda orbital/módulo de aterrizaje soviética Phobos se perdió de camino a Marte en 1989; la Phobos 2 también se perdió en 1989 cerca de la luna marciana Phobos; y la estadounidense Mars Observer se perdió en 1993 justo antes de la llegada a Marte.
+
+
+	</p>	
+	<marquee scrollamount="10" direction="right">
+		<img src="wopper.jpg"style=width:300px;height:200px;/>
+		
+
+	</marquee>
+		
+	<center><br><button onclick="location.href='cuerpos.html'"  target="_blank">Menu principal</button></center>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta>
+<title>Neptuno</title>
+<link rel="stylesheet" href="style14.css">
+</head>
+<body background=spacio2.jpg  >
+
+<center><img src="ptuno.gif" style=width:300px;height:300px;></center>
+
+<p> 
+    
+    <br>
+    </p>
+<div align="center" id="text">
+
+    </div>
+
+<script type="text/javascript">
+  var i=0,text;
+  text = "El planeta de la Verrier"
+
+  function typing() {
+    if(i<text.length){
+      document.getElementById("text").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typing,80);
+    }
+  }
+  typing();
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+<html>
+<head>
+<meta>
+<title>Contenido frame medio ambiente</title>
+
+
+<script>
+
+/*
+Uphill Text effect
+By JavaScript Kit (http://javascriptkit.com)
+Over 400+ free scripts here!
+*/
+
+function uphilltext(text){
+var temptext=text.toUpperCase()
+var size=1
+//go through the text, letter by letter
+for (i=0;i<temptext.length;i++){
+document.write(temptext.charAt(i).fontsize(size).bold())
+if (size<7)
+size++
+else
+size=1
+}
+}
+</script>
+<style type="text/css">
+.oculto { display: none; }
+.visible { display: inline; }
+</style>
+
+<script type="text/javascript">
+function muestra() {
+  var elemento = document.getElementById("adicional");
+  elemento.className = "visible";
+
+  var enlace = document.getElementById("enlace");
+  enlace.className = "oculto";
+}
+</script>
+</head>
+<style>
+
+p {color:white;}
+li {color:white;}
+h2 {color:blue;}
+</style>
+<body background=specter.jpg onload="doWave(0)" s>
+	<center><FONT SIZE="7" FACE="Verdana"><SPAN ID="s"  STYLE=" position:absolute; color:white">URANO</SPAN></center>
+	<center><SPAN ID="s2" STYLE=" position:absolute; color:white">URANO</SPAN></center>
+	<center><SPAN ID="s3" STYLE=" position:absolute; color:white">URANO</SPAN></center>
+	<center><SPAN ID="ds" STYLE=" position:relative; "></SPAN></center>
+	</FONT>
+	
+	<FONT COLOR="#000000" SIZE="6" FACE="Verdana">URANO</FONT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+y=0
+x=2
+z=1
+function l(){
+y+=1
+x+=1
+z+=1
+document.all.s.style.color="lightgreen";
+document.all.s.style.margin=y;
+document.all.s3.style.color="purple";
+document.all.s3.style.margin=z;
+document.all.s2.style.color="white";
+document.all.s2.style.margin=x;
+
+if (y>3){
+y=0}
+if (z>3){
+z=0}
+if (x>3){
+x=0}
+setTimeout("l(),1")
+}
+
+l()
+
+</SCRIPT>
+
+<p align="center"><b>
+<script>
+var isIE=document.all?true:false;
+var isNS4=document.layers?true:false;
+var isNS6=!isIE&&document.getElementById?true:false;
+function openIt() {
+  var _page = "http://www.js-examples.com/";
+  var _name = "Messages";
+  var _parms = "status=yes,top=100,left=200,width=250,height=1";
+  window.open(_page,_name,_parms)
+}
+</script>
+
+</head>
+</b>
+<body>
+
+</p>
+
+<div id="StartMenu">
+<font color="white" size="3">
+	
+  <br><strong> Se llama así en honor de la divinidad griega del cielo Urano (del griego antiguo Οὐρανός), el padre de Crono (Saturno) y el abuelo de Zeus (Júpiter). 
+  </strong>Urano está compuesto de agua, metano y amoniaco sobre un pequeño centro rocoso. Su atmósfera está hecha de hidrógeno y helio, como Júpiter y Saturno, pero además contiene metano. El metano es lo que le da a Urano el color azul.
+   <il><a href="purano.html" target=planet>Mas informacion de urano</a>
+</font>
+</div>
+
+<script name="startmenu"> 
+onclick="openIt()"; // this statement should go inside the body tag to work best!
+var h = "hidden"; 
+var v = "visible"; 
+
+function showMenu(_v)
+{
+  if(isIE)
+    window.document.all.StartMenu.style.visibility = _v?v:h;
+  if(isNS6)
+    document.getElementById("StartMenu").style.visibility=_v?v:h;
+  if(isNS4)
+  {
+    alert("This script will not run for NS4 because this DIV is positioned relatively and not absolutely!");
+	/*
+	 * This code would run if the DIV was positioned absolutely.
+     * document.StartMenu.hidden=_v?"true":"false";
+	 */
+  }
+}
+</script> 
+<a href="javascript:showMenu(true)"><font size="2">Mostrar texto</font></a><font size="2"><BR>
+<a href="javascript:showMenu(false)">Esconder texto</a> </font>
+<p>
+	Urano también tiene anillos tenues. Los anillos internos son angostos y oscuros. Los anillos externos tienen colores vivos y son más fáciles de ver.
+		Como Venus, Urano rota en dirección opuesta a la de la mayoría de los otros planetas. Y, a diferencia de cualquier otro planeta, Urano rota de lado.
+	</p>
+		<CENTER><FONT COLOR="PURPLE">
+<script>
+uphilltext("¿Un gigante elado?")
+</script>
+</center>
+</b></p>
+</FONT>
+<p id="texto">A veces los planetas Urano y Neptuno se clasifican como gigantes helados, ya que su composición es parecida y algo distinta de los otros dos gigantes gaseosos, Júpiter y Saturno. <span id="adicional" class="oculto"> La atmósfera de Urano está formada por hidrógeno, metano y otros hidrocarburos. El metano absorbe la luz roja, por eso refleja los tonos azules y verdes. </span></p>
+<a id="enlace" href="#" onclick="muestra(); return false;">Seguir leyendo</a>
+<BR>
+		
+
+
+		
+
+	
+<script language="JavaScript">
+
+//put your text here
+var theText = "Informacion relevante";
+
+function nextSize(i,incMethod,textLength)
+{
+if (incMethod == 1) return (30*Math.abs( Math.sin(i/(textLength/3.14))) );
+if (incMethod == 2) return (100*Math.abs( Math.cos(i/(textLength/3.14))));
+}
+
+function sizeCycle(text,method,dis)
+{
+	output = "";
+	for (i = 0; i < text.length; i++)
+	{
+		size = parseInt(nextSize(i +dis,method,text.length));
+		output += "<font style='font-size: "+ size +"pt'>" +text.substring(i,i+1)+ "</font>";
+	}
+	theDiv.innerHTML = output;
+}
+
+function doWave(n) 
+{   
+	sizeCycle(theText,1,n);
+	if (n > theText.length) {n=0}
+	setTimeout("doWave(" + (n+1) + ")", 50);
+}
+</script>
+</b></p>
+<div ID="theDiv" align="center" style="color:darkblue;"></div>
+	
+	<ul>
+		<li>Está rodeado por 13 anillos.
+</li>
+			<li>Es un gigante de hielo, en lugar de un gigante de gas. Está compuesto, en su mayor parte, por hielo fluido sobre un núcleo sólido.
+</li>
+		<li>Tiene una atmósfera densa hecha de metano, hidrógeno y helio.</li>
+		<li>
+			TEs el único planeta que rota de lado.</li>
+		<li>Da vueltas en la dirección contraria a las de la Tierra y de la mayoría de los planetas..</li>	
+		<li>Un año equivale a 84 año en la Tierra. ¡Tendrías que esperar demasiado para soplar las velas de tu cumpleaños!</li>		
+	</ul>
+	<marquee scrollamount="10" direction="right">
+		<img src="ura.jpg"style=width:300px;height:200px;/>
+		<img src="ura2.jpg"style=width:300px;height:200px;/>
+		<p><u><sub>El Telescopio Espacial Hubble tomó esta fotografía de Urano. Puedes ver las franjas y un punto oscuro en la atmósfera de Urano.</sub></u></p>
+
+	</marquee>
+	</p>
+
+	<br><button onclick="location.href='cuerpos.html'"  target="_blank">Menu principal</button>
+</body>
+</html>

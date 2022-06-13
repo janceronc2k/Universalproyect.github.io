@@ -1,0 +1,241 @@
+<html>
+<head>
+<meta>
+<title>Contenido frame medio ambiente</title>
+<style >
+	td{color: white;}
+	th{color: lightblue;}
+</style>
+
+<script>
+
+/*
+Uphill Text effect
+By JavaScript Kit (http://javascriptkit.com)
+Over 400+ free scripts here!
+*/
+
+function uphilltext(text){
+var temptext=text.toUpperCase()
+var size=1
+//go through the text, letter by letter
+for (i=0;i<temptext.length;i++){
+document.write(temptext.charAt(i).fontsize(size).bold())
+if (size<7)
+size++
+else
+size=1
+}
+}
+</script>
+<style type="text/css">
+.oculto { display: none; }
+.visible { display: inline; }
+</style>
+
+<script type="text/javascript">
+function muestra() {
+  var elemento = document.getElementById("adicional");
+  elemento.className = "visible";
+
+  var enlace = document.getElementById("enlace");
+  enlace.className = "oculto";
+}
+</script>
+</head>
+<style>
+
+p {color:white;}
+li {color:white;}
+h2 {color:blue;}
+</style>
+<body background=specter.jpg onload="doWave(0)" s>
+	<center><FONT SIZE="7" FACE="Verdana"><SPAN ID="s"  STYLE=" position:absolute; color:white">NEPTUNO</SPAN></center>
+	<center><SPAN ID="s2" STYLE=" position:absolute; color:white">NEPTUNO</SPAN></center>
+	<center><SPAN ID="s3" STYLE=" position:absolute; color:white">NEPTUNO</SPAN></center>
+	<center><SPAN ID="ds" STYLE=" position:relative; "></SPAN></center>
+	</FONT>
+	
+	<FONT COLOR="#000000" SIZE="6" FACE="Verdana">NEPTUNO</FONT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+y=0
+x=2
+z=1
+function l(){
+y+=1
+x+=1
+z+=1
+document.all.s.style.color="BLUE";
+document.all.s.style.margin=y;
+document.all.s3.style.color="LIGHTBLUE";
+document.all.s3.style.margin=z;
+document.all.s2.style.color="white";
+document.all.s2.style.margin=x;
+
+if (y>3){
+y=0}
+if (z>3){
+z=0}
+if (x>3){
+x=0}
+setTimeout("l(),1")
+}
+
+l()
+
+</SCRIPT>
+
+<p align="center"><b>
+<script>
+var isIE=document.all?true:false;
+var isNS4=document.layers?true:false;
+var isNS6=!isIE&&document.getElementById?true:false;
+function openIt() {
+  var _page = "http://www.js-examples.com/";
+  var _name = "Messages";
+  var _parms = "status=yes,top=100,left=200,width=250,height=1";
+  window.open(_page,_name,_parms)
+}
+</script>
+
+</head>
+</b>
+<body>
+
+</p>
+
+<div id="StartMenu">
+<font color="white" size="3">
+	
+  <br><strong> Neptuno es oscuro, frío y muy ventoso. Es el último de los planetas de nuestro sistema solar.
+  </strong>Está más de 30 veces más lejos del Sol que la Tierra. Neptuno es muy parecido a Urano. Está compuesto de una espesa mezcla de agua, amoniaco y metano sobre un centro sólido del tamaño de la Tierra. Su atmósfera se compone de hidrógeno, helio y metano. El metano le da a Neptuno el mismo color azul de Urano. Neptuno tiene seis anillos que no se ven fácilmente.
+   <il><a href="pneptuno.html" target=planet>Mas informacion de neptuno</a>
+</font>
+</div>
+
+<script name="startmenu"> 
+onclick="openIt()"; // this statement should go inside the body tag to work best!
+var h = "hidden"; 
+var v = "visible"; 
+
+function showMenu(_v)
+{
+  if(isIE)
+    window.document.all.StartMenu.style.visibility = _v?v:h;
+  if(isNS6)
+    document.getElementById("StartMenu").style.visibility=_v?v:h;
+  if(isNS4)
+  {
+    alert("This script will not run for NS4 because this DIV is positioned relatively and not absolutely!");
+	/*
+	 * This code would run if the DIV was positioned absolutely.
+     * document.StartMenu.hidden=_v?"true":"false";
+	 */
+  }
+}
+</script> 
+<a href="javascript:showMenu(true)"><font size="2">Mostrar texto</font></a><font size="2"><BR>
+<a href="javascript:showMenu(false)">Esconder texto</a> </font>
+<p>
+	El interior de Neptuno es roca fundida con agua, metano y amoníaco líquidos. En el exterior abunda el metano, que le da su característico color azul. Neptuno es un poco más pequeño que Urano, pero más denso.
+	</p>
+		<CENTER><FONT COLOR="LIGHTBLUE">
+<script>
+uphilltext("La atmosfera de neptuno")
+</script>
+</center>
+</b></p>
+</FONT>
+<p id="texto">La atmósfera tiene algunas manchas que recuerdan las tempestades de Júpiter, pero, a diferencia de este, en Neptuno se forman y desaparecen con frecuencia <span id="adicional" class="oculto"> La más grande, la Gran Mancha Oscura, tenía un tamaño similar al de la Tierra, pero en 1994 desapareció y se formó otra. Los vientos más fuertes de cualquier planeta del Sistema Solar son los de Neptuno. Muchos de ellos soplan en sentido contrario al de rotación. Cerca de la Gran Mancha Oscura se midieron vientos de 2.000 Km/h </span></p>
+<a id="enlace" href="#" onclick="muestra(); return false;">Seguir leyendo</a>
+
+<marquee scrollamount="10" direction="right">
+		<img src="CC.jpg"style=width:300px;height:200px;/>
+	
+	</marquee>
+<BR>
+		
+
+
+		
+
+	
+<script language="JavaScript">
+
+//put your text here
+var theText = "Datos basicos";
+
+function nextSize(i,incMethod,textLength)
+{
+if (incMethod == 1) return (30*Math.abs( Math.sin(i/(textLength/3.14))) );
+if (incMethod == 2) return (100*Math.abs( Math.cos(i/(textLength/3.14))));
+}
+
+function sizeCycle(text,method,dis)
+{
+	output = "";
+	for (i = 0; i < text.length; i++)
+	{
+		size = parseInt(nextSize(i +dis,method,text.length));
+		output += "<font style='font-size: "+ size +"pt'>" +text.substring(i,i+1)+ "</font>";
+	}
+	theDiv.innerHTML = output;
+}
+
+function doWave(n) 
+{   
+	sizeCycle(theText,1,n);
+	if (n > theText.length) {n=0}
+	setTimeout("doWave(" + (n+1) + ")", 50);
+}
+</script>
+
+<table align="center" border="4" background=specter.jpg>
+<font color="white">
+<tr>   
+<th> DATOS </th> 
+<th> NEPTUNO </th>
+<th> TIERRA </th>
+</tr>
+
+<tr>
+<td>Tamañno</td>   
+<td>24,622 km</td>   
+<td>6,378 km</td>   
+<td rowspan="6"  ><IMG SRC="POPEYE.jpg" WIDTH="300" HEIGHT="200"></td>
+
+</tr>
+<tr>
+<td>Distancia media al sol</td>   
+<td>4,498,252,900 km</td> 
+<td>149,600,000</td>     
+</tr>
+<tr>
+<td>Dia</td>   
+<td>16,11 horas</td>   
+<td>23,93 horas</td>   
+</tr>
+<tr>
+<td>Año</td>   
+<td>164,8 años</td>
+<td>1 año</td>      
+</tr>
+<tr>
+<td>Temperatura</td>   
+<td>-220 °C</td>
+<td>15°C</td>      
+</tr>
+<tr>
+<td>Gravedad</td>   
+<td>11 m/s</td>
+<td>9,78 m/s2</td>      
+</tr>
+
+</table>
+</font>
+
+	<br><button onclick="location.href='cuerpos.html'"  target="_blank">Menu principal</button>
+</body>
+</html>

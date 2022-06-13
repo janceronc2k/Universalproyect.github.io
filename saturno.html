@@ -1,0 +1,208 @@
+<html>
+<head>
+<meta>
+<title>Contenido frame medio ambiente</title>
+<link rel="icon" type="image/jpg" href="imagenes/textura.jpg"/>
+
+</head>
+<style>
+
+p {color:white;}
+li {color:white;}
+h2 {color:blue;}
+</style>
+<body background=specter.jpg onload="doWave(0)" s>
+	<center><FONT SIZE="7" FACE="Verdana"><SPAN ID="s"  STYLE=" position:absolute; color:white">SATURNO</SPAN></center>
+	<center><SPAN ID="s2" STYLE=" position:absolute; color:white">SATURNO</SPAN></center>
+	<center><SPAN ID="s3" STYLE=" position:absolute; color:white">SATURNO</SPAN></center>
+	<center><SPAN ID="ds" STYLE=" position:relative; "></SPAN></center>
+	</FONT>
+	
+	<FONT COLOR="#000000" SIZE="6" FACE="Verdana">SATURNO</FONT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+y=0
+x=2
+z=1
+function l(){
+y+=1
+x+=1
+z+=1
+document.all.s.style.color="YELLOW";
+document.all.s.style.margin=y;
+document.all.s3.style.color="ORANGE";
+document.all.s3.style.margin=z;
+document.all.s2.style.color="BLACK";
+document.all.s2.style.margin=x;
+
+if (y>3){
+y=0}
+if (z>3){
+z=0}
+if (x>3){
+x=0}
+setTimeout("l(),1")
+}
+
+l()
+
+</SCRIPT>
+
+<p align="center"><b>
+<script>
+var isIE=document.all?true:false;
+var isNS4=document.layers?true:false;
+var isNS6=!isIE&&document.getElementById?true:false;
+function openIt() {
+  var _page = "http://www.js-examples.com/";
+  var _name = "Messages";
+  var _parms = "status=yes,top=100,left=200,width=250,height=1";
+  window.open(_page,_name,_parms)
+}
+</script>
+
+</head>
+</b>
+<body>
+
+</p>
+
+<div id="StartMenu">
+<font color="white" size="3">
+	
+  <br><strong>Saturno no es el único planeta que tiene anillos, pero definitivamente tiene los más bellos. 
+  </strong>Los anillos que vemos están compuestos por grupos de pequeños aros que rodean a Saturno. Están hechos de pedazos de hielo y roca. Como Júpiter, Saturno es una pelota de hidrógeno y helio, en gran parte.Cuando Galileo Galilei vio a Saturno a través de un telescopio en el siglo XVII, no estaba seguro de lo que estaba viendo. Al principio, creyó que estaba mirando tres planetas, o un planeta con asas<font color="YELLOW">Ahora, sabemos que esas "asas" eran los anillos de Saturno.</font>
+
+
+   <il><a href="psaturno.html" target=planet>Saturno</a>
+</font>
+</div>
+
+<script name="startmenu"> 
+onclick="openIt()"; // this statement should go inside the body tag to work best!
+var h = "hidden"; 
+var v = "visible"; 
+
+function showMenu(_v)
+{
+  if(isIE)
+    window.document.all.StartMenu.style.visibility = _v?v:h;
+  if(isNS6)
+    document.getElementById("StartMenu").style.visibility=_v?v:h;
+  if(isNS4)
+  {
+    alert("This script will not run for NS4 because this DIV is positioned relatively and not absolutely!");
+	/*
+	 * This code would run if the DIV was positioned absolutely.
+     * document.StartMenu.hidden=_v?"true":"false";
+	 */
+  }
+}
+</script> 
+<a href="javascript:showMenu(true)"><font size="2">Mostrar texto</font></a><font size="2"><BR>
+<a href="javascript:showMenu(false)">Esconder texto</a> </font>
+
+	<CENTER><FONT COLOR="YELLOW">
+<script>
+uphilltext("Los anillos de staurno")
+</script>
+</center>
+	<p>
+	<strong>Los anillos tienen aproximadamente 400.000 kilómetros (240.000 millas) de ancho.
+	</strong>¡Ésa es la distancia entre la Tierra y la Luna! Pero algunos tienen tan sólo 100 metros (330 pies) de ancho. Están compuestos por partículas demasiado pequeñas para verlas a simple vista, hasta "partículas" del tamaño de un autobús
+	</p>	
+	<p>
+		Vistos desde cerca, los anillos de Saturno se mostrarían como un inmenso campo de meteoritos y polvo en órbita alrededor del ecuador del planeta.
+		Pero, en cualquier caso, no se trata de estructuras únicas o monolíticas, sino de miles de millones de rocas que, al estar cercanas entre sí, y desde nuestra perspectiva, dan la sensación de ser anillos que rodean al planeta.
+	</p>
+	
+	<marquee scrollamount="10" direction="right">
+		
+		<img src=" nope.jpg"style=width:300px;height:200px;/>
+
+	</marquee>
+	</p>
+<center><h2><script language="JavaScript1.2">
+
+//Neon Lights Text II by G.P.F. (gpf@beta-cc.de)
+//visit http://www.beta-cc.de
+//Visit http://www.dynamicdrive.com for this script 
+
+var message="Datos curiosos"
+var neonbasecolor="ORANGE"
+var neontextcolor="yellow"
+var neontextcolor2="brown"
+var flashspeed=100						// speed of flashing in milliseconds
+var flashingletters=3						// number of letters flashing in neontextcolor
+var flashingletters2=1						// number of letters flashing in neontextcolor2 (0 to disable)
+var flashpause=0						// the pause between flash-cycles in milliseconds
+
+///No need to edit below this line/////
+
+var n=0
+if (document.all||document.getElementById){
+document.write('<font color="'+neonbasecolor+'">')
+for (m=0;m<message.length;m++)
+document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+document.write('</font>')
+}
+else
+document.write(message)
+
+function crossref(number){
+var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+return crossobj
+}
+
+function neon(){
+
+//Change all letters to base color
+if (n==0){
+for (m=0;m<message.length;m++)
+crossref(m).style.color=neonbasecolor
+}
+
+//cycle through and change individual letters to neon color
+crossref(n).style.color=neontextcolor
+
+if (n>flashingletters-1) crossref(n-flashingletters).style.color=neontextcolor2 
+if (n>(flashingletters+flashingletters2)-1) crossref(n-flashingletters-flashingletters2).style.color=neonbasecolor
+
+
+if (n<message.length-1)
+n++
+else{
+n=0
+clearInterval(flashing)
+setTimeout("beginneon()",flashpause)
+return
+}
+}
+
+function beginneon(){
+if (document.all||document.getElementById)
+flashing=setInterval("neon()",flashspeed)
+}
+beginneon()
+
+
+</script></h2></center>
+	
+	<ul>
+		<li>Es un gigante de gas, como Júpiter. Está compuesto por hidrógeno y helio, sobre todo.
+</li>
+			<li>Cuenta con un precioso grupo de siete anillos separados por espacio entre ellos.
+</li>
+		<li>¡Tiene más de 50 lunas! Falta confirmar la existencia de varias lunas más.</li>
+		<li>
+			Se conoce su existencia desde la antigüedad, ya que podemos verlo sin necesidad de usar telescopios avanzados. </li>
+		<li>Es el sexto planeta contando desde el Sol. Sus planetas vecinos son Júpiter y Urano.
+
+</li>	
+		
+	</ul>
+	
+	<br><button onclick="location.href='cuerpos.html'"  target="_blank">Menu principal</button>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<html>
+<head>
+<meta>
+<title>Contenido frame medio ambiente</title>
+<link rel="icon" type="image/jpg" href="imagenes/textura.jpg"/>
+
+</head>
+<style>
+
+p {color:white;}
+li {color:white;}
+h2 {color:blue;}
+</style>
+<body background=specter.jpg onload="doWave(0)" s>
+	<center><FONT SIZE="7" FACE="Verdana"><SPAN ID="s"  STYLE=" position:absolute; color:white">MERCURIO</SPAN></center>
+	<center><SPAN ID="s2" STYLE=" position:absolute; color:white">MERCURIO</SPAN></center>
+	<center><SPAN ID="s3" STYLE=" position:absolute; color:white">MERCURIO</SPAN></center>
+	<center><SPAN ID="ds" STYLE=" position:relative; "></SPAN></center>
+	</FONT>
+	
+	<FONT COLOR="#000000" SIZE="6" FACE="Verdana">MERCURIO</FONT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+y=0
+x=2
+z=1
+function l(){
+y+=1
+x+=1
+z+=1
+document.all.s.style.color="YELLLOW";
+document.all.s.style.margin=y;
+document.all.s3.style.color="LIGHTBLUE";
+document.all.s3.style.margin=z;
+document.all.s2.style.color="BROWN";
+document.all.s2.style.margin=x;
+
+if (y>3){
+y=0}
+if (z>3){
+z=0}
+if (x>3){
+x=0}
+setTimeout("l(),1")
+}
+
+l()
+
+</SCRIPT>
+
+<p align="center"><b>
+<script>
+var isIE=document.all?true:false;
+var isNS4=document.layers?true:false;
+var isNS6=!isIE&&document.getElementById?true:false;
+function openIt() {
+  var _page = "http://www.js-examples.com/";
+  var _name = "Messages";
+  var _parms = "status=yes,top=100,left=200,width=250,height=1";
+  window.open(_page,_name,_parms)
+}
+</script>
+
+</head>
+</b>
+<body>
+
+</p>
+
+<div id="StartMenu">
+<font color="white" size="3">
+	
+  <br><strong>Nuestro hogar, el planeta Tierra, es un planeta terrestre y rocoso. 
+  </strong>. Nuestra atmósferaestá compuesta, en gran parte, por nitrógeno. También tiene mucho oxígeno, que nos permite respirar.
+   Además, nos protege de los meteoroides que se acercan a la Tierra, la mayoría de los cuales se desintegran en nuestra atmósfera antes de llegar a la superficie en forma de meteoritos.
+   <il><a href="pmercurio.html" target=planet>Mas informacion de mercurio</a>
+</font>
+</div>
+
+<script name="startmenu"> 
+onclick="openIt()"; // this statement should go inside the body tag to work best!
+var h = "hidden"; 
+var v = "visible"; 
+
+function showMenu(_v)
+{
+  if(isIE)
+    window.document.all.StartMenu.style.visibility = _v?v:h;
+  if(isNS6)
+    document.getElementById("StartMenu").style.visibility=_v?v:h;
+  if(isNS4)
+  {
+    alert("This script will not run for NS4 because this DIV is positioned relatively and not absolutely!");
+	/*
+	 * This code would run if the DIV was positioned absolutely.
+     * document.StartMenu.hidden=_v?"true":"false";
+	 */
+  }
+}
+</script> 
+<a href="javascript:showMenu(true)"><font size="2">Mostrar texto</font></a><font size="2"><BR>
+<a href="javascript:showMenu(false)">Esconder texto</a> </font>
+
+<script language="JavaScript">
+
+//put your text here
+var theText = "Un planeta rocoso";
+
+function nextSize(i,incMethod,textLength)
+{
+if (incMethod == 1) return (30*Math.abs( Math.sin(i/(textLength/3.14))) );
+if (incMethod == 2) return (100*Math.abs( Math.cos(i/(textLength/3.14))));
+}
+
+function sizeCycle(text,method,dis)
+{
+	output = "";
+	for (i = 0; i < text.length; i++)
+	{
+		size = parseInt(nextSize(i +dis,method,text.length));
+		output += "<font style='font-size: "+ size +"pt'>" +text.substring(i,i+1)+ "</font>";
+	}
+	theDiv.innerHTML = output;
+}
+
+function doWave(n) 
+{   
+	sizeCycle(theText,1,n);
+	if (n > theText.length) {n=0}
+	setTimeout("doWave(" + (n+1) + ")", 50);
+}
+</script>
+</b></p>
+<div ID="theDiv" align="center" style="color:purple;"></div>
+	<p>
+	<strong>Junto con Venus, la Tierra y Marte, Mercurio es uno de los planetas rocosos.
+	</strong>Tiene una superficie sólida que está cubierta de cráteres. Tiene una atmósfera delgada y no tiene ninguna luna. A Mercurio le gusta simplificar las cosas.
+
+	</p>	
+Este planeta pequeño da vueltas lentamente comparado con la Tierra, por lo tanto, un día dura un largo tiempo. A Mercurio le lleva 59 días de la Tierra hacer una rotacion completa.
+Un año en Mercurio pasa rápido. Debido a que es el planeta más cercano al Sol, no le lleva mucho tiempo cubrir toda la circunferencia. Completa una vuelta alrededor del Sol en solo 88 días de la Tierra. ¡Si vivieras en Mercurio, tendrías una fiesta de cumpleaños cada tres meses!
+	
+
+		<center><img src="ggg.png"style=width:300px;height:200px;/></center>
+		
+
+	
+	</p>
+<center><h2><script language="JavaScript1.2">
+
+//Neon Lights Text II by G.P.F. (gpf@beta-cc.de)
+//visit http://www.beta-cc.de
+//Visit http://www.dynamicdrive.com for this script 
+
+var message="Meteorito proveniente de mercurio"
+var neonbasecolor="white"
+var neontextcolor="purple"
+var neontextcolor2="blue"
+var flashspeed=100						// speed of flashing in milliseconds
+var flashingletters=3						// number of letters flashing in neontextcolor
+var flashingletters2=1						// number of letters flashing in neontextcolor2 (0 to disable)
+var flashpause=0						// the pause between flash-cycles in milliseconds
+
+///No need to edit below this line/////
+
+var n=0
+if (document.all||document.getElementById){
+document.write('<font color="'+neonbasecolor+'">')
+for (m=0;m<message.length;m++)
+document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+document.write('</font>')
+}
+else
+document.write(message)
+
+function crossref(number){
+var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+return crossobj
+}
+
+function neon(){
+
+//Change all letters to base color
+if (n==0){
+for (m=0;m<message.length;m++)
+crossref(m).style.color=neonbasecolor
+}
+
+//cycle through and change individual letters to neon color
+crossref(n).style.color=neontextcolor
+
+if (n>flashingletters-1) crossref(n-flashingletters).style.color=neontextcolor2 
+if (n>(flashingletters+flashingletters2)-1) crossref(n-flashingletters-flashingletters2).style.color=neonbasecolor
+
+
+if (n<message.length-1)
+n++
+else{
+n=0
+clearInterval(flashing)
+setTimeout("beginneon()",flashpause)
+return
+}
+}
+
+function beginneon(){
+if (document.all||document.getElementById)
+flashing=setInterval("neon()",flashspeed)
+}
+beginneon()
+
+
+</script></h2></center>
+	
+	
+	<br><button onclick="location.href='cuerpos.html'"  target="_blank">Menu principal</button>
+</body>
+</html>

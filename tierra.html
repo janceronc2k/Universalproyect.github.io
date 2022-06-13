@@ -1,0 +1,256 @@
+<html>
+<head>
+<meta>
+<title>Contenido frame medio ambiente</title>
+
+
+
+</head>
+<style>
+
+p {color:white;}
+li {color:white;}
+h2 {color:blue;}
+</style>
+<body background=specter.jpg onload="doWave(0)" s>
+	<center><FONT SIZE="7" FACE="Verdana"><SPAN ID="s"  STYLE=" position:absolute; color:white">LA TIERRA</SPAN></center>
+	<center><SPAN ID="s2" STYLE=" position:absolute; color:white">LA TIERRA</SPAN></center>
+	<center><SPAN ID="s3" STYLE=" position:absolute; color:white">LA TIERRA</SPAN></center>
+	<center><SPAN ID="ds" STYLE=" position:relative; "></SPAN></center>
+	</FONT>
+	
+	<FONT COLOR="#000000" SIZE="6" FACE="Verdana">LA TIERRA</FONT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+y=0
+x=2
+z=1
+function l(){
+y+=1
+x+=1
+z+=1
+document.all.s.style.color="BLUE";
+document.all.s.style.margin=y;
+document.all.s3.style.color="LIGHTGREEN";
+document.all.s3.style.margin=z;
+document.all.s2.style.color="LIGHTBLUE";
+document.all.s2.style.margin=x;
+
+if (y>3){
+y=0}
+if (z>3){
+z=0}
+if (x>3){
+x=0}
+setTimeout("l(),1")
+}
+
+l()
+
+</SCRIPT>
+
+<p align="center"><b>
+<script>
+var isIE=document.all?true:false;
+var isNS4=document.layers?true:false;
+var isNS6=!isIE&&document.getElementById?true:false;
+function openIt() {
+  var _page = "http://www.js-examples.com/";
+  var _name = "Messages";
+  var _parms = "status=yes,top=100,left=200,width=250,height=1";
+  window.open(_page,_name,_parms)
+}
+</script>
+
+</head>
+</b>
+<body>
+
+</p>
+
+<div id="StartMenu">
+<font color="white" size="3">
+	
+  <br><strong>Nuestro hogar, el planeta Tierra, es un planeta terrestre y rocoso. 
+  </strong>. Nuestra atmósferaestá compuesta, en gran parte, por nitrógeno. También tiene mucho oxígeno, que nos permite respirar.
+   Además, nos protege de los meteoroides que se acercan a la Tierra, la mayoría de los cuales se desintegran en nuestra atmósfera antes de llegar a la superficie en forma de meteoritos.
+   <il><a href="ptierra.html" target=planet>Tierra</a>
+</font>
+</div>
+
+<script name="startmenu"> 
+onclick="openIt()"; // this statement should go inside the body tag to work best!
+var h = "hidden"; 
+var v = "visible"; 
+
+function showMenu(_v)
+{
+  if(isIE)
+    window.document.all.StartMenu.style.visibility = _v?v:h;
+  if(isNS6)
+    document.getElementById("StartMenu").style.visibility=_v?v:h;
+  if(isNS4)
+  {
+    alert("This script will not run for NS4 because this DIV is positioned relatively and not absolutely!");
+	/*
+	 * This code would run if the DIV was positioned absolutely.
+     * document.StartMenu.hidden=_v?"true":"false";
+	 */
+  }
+}
+</script> 
+<a href="javascript:showMenu(true)"><font size="2">Mostrar texto</font></a><font size="2"><BR>
+<a href="javascript:showMenu(false)">Esconder texto</a> </font>
+
+<script language="JavaScript">
+
+//put your text here
+var theText = "Caracteristicas de la tierra";
+
+function nextSize(i,incMethod,textLength)
+{
+if (incMethod == 1) return (30*Math.abs( Math.sin(i/(textLength/3.14))) );
+if (incMethod == 2) return (100*Math.abs( Math.cos(i/(textLength/3.14))));
+}
+
+function sizeCycle(text,method,dis)
+{
+	output = "";
+	for (i = 0; i < text.length; i++)
+	{
+		size = parseInt(nextSize(i +dis,method,text.length));
+		output += "<font style='font-size: "+ size +"pt'>" +text.substring(i,i+1)+ "</font>";
+	}
+	theDiv.innerHTML = output;
+}
+
+function doWave(n) 
+{   
+	sizeCycle(theText,1,n);
+	if (n > theText.length) {n=0}
+	setTimeout("doWave(" + (n+1) + ")", 50);
+}
+</script>
+</b></p>
+<div ID="theDiv" align="center" style="color:lightgreen;"></div>
+	<p>
+	<strong>La Tierra es el quinto planeta del Sistema Solar en cuanto a tamaño
+	</strong>y el único capaz de albergar vida. Posee una forma esférica con un leve achatamiento en
+los polos, y 12.756 km de diámetro a la altura del Ecuador (un radio ecuatorial de 6.378,1 kilómetros).
+
+	</p>	
+	<ul>
+		<li>Su masa es de 5,9736 x 1024 kilogramos y su densidad de 5,515 g/cm3, la más alta
+		del Sistema Solar. También tiene una aceleración de gravedad de 9,780327 m/s2.
+</li>
+			<li>La masa terrestre está integrada por un conjunto diverso de elementos químicos. Los elementos más abundantes son el hierro (32,1%), oxígeno (30,1%), silicio (15,1%), magnesio (13,9%), azufre (2,9%), níquel (1,8%), calcio (1,5%) y aluminio (1,4%), dejando un 1,2% para el resto de los elementos.
+</li>
+		<li>Aire: a partir de la composición química de este elemento, es que se pueden identificar
+			estados de contaminación. Por otra parte, este puede llegar a influir en la calidad del oxígeno
+		que participa en la respiración.</li>
+		<li>
+			Temperatura: esta magnitud que hace referencia al calor que se mide por medio de un
+			termómetro, puede comprometer bastante el ambiente, consiguiendo que el aire se pueda
+			percibir frío o caliente. Puesto que algunos organismos únicamente sobreviven dentro de
+			ciertos rangos de temperatura, esta muchas veces puede ser sinónimo de deterioro.</li>
+		<li>Accidentes geográficos: se trata de los elementos que constituyen el relieve de una zona, por
+		ejemplo, los valles y montañas.</li>	
+		
+	</ul>
+	<marquee scrollamount="10" direction="right">
+		<img src="oxi.png"style=width:100px;height:100px;/>
+		<img src="cal.png"style=width:100px;height:100px;/>
+
+	</marquee>
+	</p>
+<center><h2><script language="JavaScript1.2">
+
+//Neon Lights Text II by G.P.F. (gpf@beta-cc.de)
+//visit http://www.beta-cc.de
+//Visit http://www.dynamicdrive.com for this script 
+
+var message="Formacion de la tierra"
+var neonbasecolor="white"
+var neontextcolor="blue"
+var neontextcolor2="green"
+var flashspeed=100						// speed of flashing in milliseconds
+var flashingletters=3						// number of letters flashing in neontextcolor
+var flashingletters2=1						// number of letters flashing in neontextcolor2 (0 to disable)
+var flashpause=0						// the pause between flash-cycles in milliseconds
+
+///No need to edit below this line/////
+
+var n=0
+if (document.all||document.getElementById){
+document.write('<font color="'+neonbasecolor+'">')
+for (m=0;m<message.length;m++)
+document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+document.write('</font>')
+}
+else
+document.write(message)
+
+function crossref(number){
+var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+return crossobj
+}
+
+function neon(){
+
+//Change all letters to base color
+if (n==0){
+for (m=0;m<message.length;m++)
+crossref(m).style.color=neonbasecolor
+}
+
+//cycle through and change individual letters to neon color
+crossref(n).style.color=neontextcolor
+
+if (n>flashingletters-1) crossref(n-flashingletters).style.color=neontextcolor2 
+if (n>(flashingletters+flashingletters2)-1) crossref(n-flashingletters-flashingletters2).style.color=neonbasecolor
+
+
+if (n<message.length-1)
+n++
+else{
+n=0
+clearInterval(flashing)
+setTimeout("beginneon()",flashpause)
+return
+}
+}
+
+function beginneon(){
+if (document.all||document.getElementById)
+flashing=setInterval("neon()",flashspeed)
+}
+beginneon()
+
+
+</script></h2></center>
+	
+	<p>
+	La Tierra  primigenia se formó por la colisión y fusión de fragmentos de rocas más pequeños, de los denominados planetesimales.  Por ello, los
+elementos de la  Tierra primigenia debían estar repartidos de un modo relativamente homogéneo, Pero esta homogeneidad debió cambiar: la
+Tierra se fue calentando por causa de las desintegraciones radiactivas, por la creciente presión en su interior y, además, por el bombardeo de
+partículas provenientes del Universo. Esto llevó finalmente a la fusión del hierro, que como elemento líquido más pesado se hundió en el
+centro de la tierra primigenia y formó el núcleo terrestre. Tras el enfriamiento de la corteza terrestre externa aparecieron los primeros
+continentes.
+
+
+	</p>	
+	
+<p>
+La corteza terrestre. Está formada por un 70% de superficie líquida y un 30% de tierra firme. Su aspecto actual es el resultado provisional de
+alteraciones permanentes, de las que se consideran responsables distintas fuerzas tanto de tipo interno (endógenas) como externo (exógenas).
+
+
+
+	</p>	 
+	
+	<p>
+	<br><button onclick="location.href='cuerpos.html'"  target="_blank">Menu principal</button>
+    <p>
+</body>
+</html>

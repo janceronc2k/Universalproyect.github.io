@@ -1,0 +1,31 @@
+
+<html>
+<head>
+<meta>
+<title>imagen ecologia</title>
+<body background=spacio2.jpg  >
+<center><img src="marte2.gif" style=width:400px;height:400px;></center>
+
+<p> 
+    
+    <br>
+    </p>
+<div align="center" id="text">
+
+    </div>
+
+<script type="text/javascript">
+  var i=0,text;
+  text = "El 3 planeta del sistema solar"
+
+  function typing() {
+    if(i<text.length){
+      document.getElementById("text").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typing,80);
+    }
+  }
+  typing();
+</script>
+</body>
+</html>
